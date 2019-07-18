@@ -1,4 +1,10 @@
 node {
+
+stage('Start'){
+    steps{
+
+ echo 'Building..' }
+}
 stage('Slack notification'){
     slackSend channel: '#testing_slack',
     color: 'good',
