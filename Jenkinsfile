@@ -5,11 +5,11 @@ echo "build//"
 stage('Something to display'){
 	steps{echo 'something'}
 }
-#stage('Slack notification'){
-#    slackSend channel: '#testing_slack',
-#    color: 'good',
-#    message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"
-#    }
+//stage('Slack notification'){
+//    slackSend channel: '#testing_slack',
+//    color: 'good',
+//    message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"
+//    }
 try {
     notifyBuild('STARTED')
 
