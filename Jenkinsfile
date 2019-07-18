@@ -1,5 +1,7 @@
 node {
-
+stage('Build'){
+echo "build//"
+}
 
 stage('Slack notification'){
     slackSend channel: '#testing_slack',
